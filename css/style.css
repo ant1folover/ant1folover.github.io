@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+html{
+    background: #ccc;
+}
+.header, .main-nav, .content, .footer{
+    display: flex;
+    background: rgba(255,255,255,.5);
+    box-shadow: 3px 0 7px rgba(0,0,0,.3);
+    padding: 20px;
+}
+.header-logo{
+    border: 1px solid orange;
+    border-radius: 5px;
+    flex: 1 0 0;
+    padding: 0 0 0 5px;
+}
+.header-logo:hover{
+    border-color: red;
+    color: red;
+}
+.header-info{
+    border: 1px solid orange;
+    border-radius: 5px;
+    flex: 2 0 0;
+    padding: 0 5px 0 5px;
+    margin: 0 0 0 5px;
+}
+.header-info:hover{
+    border-color: red;
+    color: red;
+}
+.header-nickname{
+    border: 1px solid orange;
+    border-radius: 5px;
+    flex: 0.5 0 0;
+    text-align: right;
+    font-size: 12px;
+    padding: 0 5px 0 0;
+    margin: 0 0 0 5px;
+}
+.header-nickname:hover{
+    border-color: red;
+    color: red;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main-nav {
+    margin-top: 15px;
+    
+    padding: 0px;
+}
+.main-nav-ul {
+    display: flex;
+    flex: auto;
+    padding: 0px;
+     
+}
+.main-nav-ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 0 15px 0 15px;
+}
+.main-nav-ul a {
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-family: 'Berkshire Swash';
+    font-weight: bold;
+    color: black;
+}
+.content{
+    flex-direction: column;
+    margin: 15px 0 0 0;
+    font: italic normal 14px/30px DejaVu, serif;
+}
+.content h2,h3 {
+    text-align: center;
+}
+pre {
+    background: #99CCCC;
+}
