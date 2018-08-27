@@ -1,85 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
-html{
-    background: #ccc;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.header, .main-nav, .content, .footer{
-    display: flex;
+
+body {
+    background: #ccc url(../images/kosmos_2560x1600.jpg);
+}
+.wrapper, .header, .header-nav, .main, .content, .sidebar, .footer {
     background: rgba(255,255,255,.5);
     box-shadow: 3px 0 7px rgba(0,0,0,.3);
     padding: 20px;
 }
-.header-logo{
-    border: 1px solid orange;
-    border-radius: 5px;
-    flex: 1 0 0;
-    padding: 0 0 0 5px;
+.wrapper {
+    margin: auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-gap: 10px;
 }
-.header-logo:hover{
-    border-color: red;
-    color: red;
-}
-.header-info{
-    border: 1px solid orange;
-    border-radius: 5px;
-    flex: 2 0 0;
-    padding: 0 5px 0 5px;
-    margin: 0 0 0 5px;
-}
-.header-info:hover{
-    border-color: red;
-    color: red;
-}
-.header-nickname{
-    border: 1px solid orange;
-    border-radius: 5px;
-    flex: 0.5 0 0;
-    text-align: right;
-    font-size: 12px;
-    padding: 0 5px 0 0;
-    margin: 0 0 0 5px;
-}
-.header-nickname:hover{
-    border-color: red;
-    color: red;
-}
-.main{
+.header {
+    grid-area: header;
     display: flex;
-    flex-direction: column;
 }
-.main-nav {
-    margin-top: 15px;
-    
-    padding: 0px;
+.header-nav {
+    align-items: stretch;
 }
-.main-nav-ul {
+.header-nav-ul {
     display: flex;
-    flex: auto;
-    padding: 0px;
-     
+    align-items: baseline;
 }
-.main-nav-ul li {
+.header-nav-ul li {
     list-style: none;
-    padding: 10px;
-    margin: 0 15px 0 15px;
+    padding: 1px;
+    margin: 0 13px 0 13px;
 }
-.main-nav-ul a {
+.header-nav-ul a {
     text-decoration: none;
-    padding-left: 10px;
+    text-shadow: 10px 10px 30px red, 0 0 2em blue;
     font-size: 16px;
     letter-spacing: 4px;
     font-family: 'Berkshire Swash';
     font-weight: bold;
     color: black;
 }
+.header-nav-ul a:hover {
+    text-shadow: 10px 10px 30px blue, 0 0 2em red;
+    transition: 2s;
+}
+.header-nav-ul a:not(:hover) {
+    text-shadow: 10px 10px 30px red, 0 0 2em blue;
+    transition: 2s;
+}
+.main {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.footer {
+    grid-area: footer;
+}
 .content{
-    flex-direction: column;
-    margin: 15px 0 0 0;
     font: italic normal 14px/30px DejaVu, serif;
 }
 .content h2,h3 {
     text-align: center;
 }
-pre {
-    background: #99CCCC;
+.footer {
 }
