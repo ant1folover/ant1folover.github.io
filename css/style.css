@@ -52,7 +52,6 @@ body {
 }
 .header-nav-ul a:hover {
     text-shadow: 10px 10px 30px blue, 0 0 2em red;
-    transition: 2s;
 }
 
 .main {
