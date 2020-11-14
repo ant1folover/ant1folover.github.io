@@ -54,10 +54,7 @@ body {
     text-shadow: 10px 10px 30px blue, 0 0 2em red;
     transition: 2s;
 }
-.header-nav-ul a:not(:hover) {
-    text-shadow: 10px 10px 30px red, 0 0 2em blue;
-    transition: 2s;
-}
+
 .main {
     grid-area: main;
 }
