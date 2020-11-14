@@ -64,7 +64,7 @@ body {
     grid-area: footer;
 }
 .content{
-    font: normal 14px/30px DejaVu, serif;
+    font: Times new roman normal 14px/30px DejaVu, serif;
 }
 .content h2,h3 {
     text-align: center;
