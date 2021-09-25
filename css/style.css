@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #ccc url(../images/kosmos_2560x1600.jpg);
+    
 }
 .wrapper, .header, .header-nav, .main, .content, .sidebar, .footer {
     background: rgba(255,255,255,.5);
